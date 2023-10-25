@@ -12,7 +12,7 @@ public class Realisateur  {
     private List<Film> films;
 
     @MapsId
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "personne_id")
     private Personne personne;
 

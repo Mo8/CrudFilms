@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-@PrimaryKeyJoinColumn(name = "personne_id")
 @Table(name = "acteur")
 public class Acteur  {
 
@@ -13,7 +12,7 @@ public class Acteur  {
     private List<Film> films;
 
     @MapsId
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "personne_id")
     private Personne personne;
 
