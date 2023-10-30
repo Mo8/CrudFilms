@@ -13,10 +13,10 @@ public class Acteur  {
 
     @MapsId
     @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "personne_id")
     private Personne personne;
 
-    @Id @Column(name = "personne_id")
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     public void setId(Long id) {
