@@ -7,6 +7,11 @@
 - installer IntelliJ (https://www.jetbrains.com/fr-fr/idea/download/#section=windows)
 - cloner le projet avec la commande `git clone https://github.com/Mo8/CrudFilms.git'
 
+## Installation avec docker (recommandé)
+- installer docker (https://docs.docker.com/get-docker/)
+- ouvrir un terminal dans le dossier du projet
+- lancer la commande `docker-compose up -d` (cela peut prendre quelques minutes)
+- ouvrir un navigateur et aller à l'adresse http://localhost:8080 pour verifier que l'application est bien lancée
 
 ## Lancement
 - ouvrir le projet avec IntelliJ (File -> Open -> sélectionner le dossier du projet)
